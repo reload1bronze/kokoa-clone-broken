@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <link
-      rel="shortcut icon"
-      href="https://media.istockphoto.com/photos/wild-beauty-picture-id1286256215?b=1&k=20&m=1286256215&s=170667a&w=0&h=7AMAS97FEDHqc2Uy8DFRLzuRZJddhRP-95DL6uaQ-Ak="
-    />
     <meta charset="UTF-8" />
-    <meta name="description" content="This is my description" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home - My first website.</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>Document</title>
     <style>
-      h1 {
-        color: tomato;
+      * {
+        border: 3px dashed black;
+      }
+      html {
+        background-color: sandybrown;
+      }
+      body {
+        height: 100vh;
+        background-color: saddlebrown;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: lightblue;
+        margin: 8px;
+        border: 5px solid black;
+        padding: 16px;
+      }
+      span {
+        /*display: block;*/
+        background-color: whitesmoke;
+      }
+      #first {
+        background-color: blue;
+      }
+      #second {
+        height: 50px;
+        width: 50px;
+      }
+      #third {
+        height: 30px;
+        width: 30px;
+      }
+      #fourth {
+        height: 10px;
+        width: 10px;
+      }
+      .btn {
+        margin: 2px;
+        padding: 2px;
+        border: 1px solid;
+        border-radius: 10px;
+      }
+      .teal {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+      }
+      #parent {
+        height: 40vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: olive;
+      }
+      .children {
+        height: 300px;
+        width: 300px;
+        background-color: darkolivegreen;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>HeAdEr</h1>
-    </header>
-    <main>
-      <form action="">
-        <div>
-          <label for="email">Email</label>
-          <input id="email" required placeholder="Email" type="email" />
+    <div id="parent">
+      <div class="children"></div>
+      <div class="children"></div>
+      <div class="children"></div>
+      <div class="children"></div>
+    </div>
+
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
         </div>
-
-        <div>
-          <label for="password">Password</label>
-          <input
-            id="password"
-            required
-            disabled
-            placeholder="Password"
-            minlength="8"
-            type="password"
-          />
-        </div>
-
-        <input type="submit" value="Sign In" disabled />
-      </form>
-
-      <p>My name is <abbr title="House9stone">H9S</abbr></p>
-      <cite>hello</cite>
-      <p>I live in <mark>South Korea</mark></p>
-      <strong>Strong Text</strong>
-
-      <h1>Hello, HTML!</h1>
-      <h2>Hello, HTML!</h2>
-      <h3>Hello, HTML!</h3>
-      <h4>Hello, HTML!</h4>
-      <h5>Hello, HTML!</h5>
-      <h6>Hello, HTML!</h6>
-
-      <ol>
-        <li>meat</li>
-        <li>beer</li>
-        <li>milk</li>
-      </ol>
-
-      <div>
-        <a href="https://google.com" target="_blank">Go to google.com</a>
       </div>
+    </div>
 
-      <img src="cow.jpg" height="300" alt="" />
-      <img src="img/cow.jpg" height="300" alt="" />
-      <img
-        src="https://t1.daumcdn.net/cfile/tistory/242B78435378C67526"
-        height="300"
-        alt=""
-      />
-    </main>
-    <footer>&copy; 2021 OnWave</footer>
+    <span>bla</span>
+    <span>bla</span>
+    <span>bla</span>
+    <a href="#">link</a>
+    <img src="cow.jpg" width="100" alt="" />
+
+    <span class="btn teal">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn teal">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn teal">Hello</span>
+    <span class="btn tomato">Hello</span>
+    <span class="btn teal">Hello</span>
   </body>
 </html>
